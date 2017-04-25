@@ -13,8 +13,8 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
   }
   console.log('Connected to mongodb');
 
-/*  db.collection('Todos').insertOne({
-    text: 'Something to do',
+ db.collection('Todos').insertOne({
+    text: 'Fuck you :)',
     completed: false
   }, (err, result) => {
     if (err) {
@@ -22,8 +22,8 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
     }
 
     console.log(JSON.stringify(result.ops));
-  });*/
-
+  });
+/*
   db.collection('Users').insertOne({
     name: "Tomori Nao",
     age: 16,
@@ -34,6 +34,6 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
     }
     console.log('Inserted: ' + JSON.stringify(results.ops));
   });
-
+*/
   db.close();
 });
