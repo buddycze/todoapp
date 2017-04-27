@@ -6,13 +6,18 @@ mongoose.connect("mongodb://localhost:27017/TodoApp"); //connect to a db
 //tis a model
 var Todo = mongoose.model('Todo', {
   text: {
-    type: String
+    type: String,
+    required: true,
+    minlength: 1,
+    trim: true //"removes" whitespace, so its not counted
   },
   completed: {
-    type: Boolean
+    type: Boolean,
+    default: false
   },
   completedAt: {
-    type: Number
+    type: Number,
+    default: null
   }
 });
 
