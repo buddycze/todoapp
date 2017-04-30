@@ -6,3 +6,23 @@ db.collection('Todos').find(/*{
 }, (err) => {
   console.log('Unable');
 });
+
+/*
+user.save().then((doc) => {
+  console.log('user saved', doc);
+}, (e) => {
+  console.log('Unable to save user');
+});
+
+var newTodo = new Todo({
+  text: "Programm",
+  completed: true,
+  completedAt: 29
+});
+
+newTodo.save().then((doc) => {
+  console.log('Saved todo', doc);
+}, (e) => {
+  console.log("Unable to save todo");
+});
+*/
